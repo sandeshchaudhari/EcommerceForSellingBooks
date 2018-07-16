@@ -43,14 +43,13 @@
 
                     <a href="#" class="js-cart-animate">
                         <i class="seoicon-basket"></i>
-                        {{--<span class="cart-count">{{ Cart::content()->count() }}</span>--}}
-                        <span class="cart-count">Cart Count</span>
+                        <span class="cart-count">{{ Cart::content()->count() }}</span>
+                        {{--<span class="cart-count">Cart Count</span>--}}
                     </a>
 
                     <div class="cart-popup-wrap">
                         <div class="popup-cart">
-                            {{--<h4 class="title-cart align-center">${{ Cart::total() }}</h4>--}}
-                            <h4 class="title-cart align-center">$1000</h4>
+                            <h4 class="title-cart align-center">${{ Cart::total() }}</h4>
                             <br>
                             <a href="/cart">
                                 <div class="btn btn-small btn--dark">

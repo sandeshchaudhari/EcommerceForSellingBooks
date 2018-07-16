@@ -29,3 +29,12 @@ Route::get('/product/{id}', [
     'uses' => 'FrontEndController@singleProduct',
     'as' => 'product.single'
 ]);
+
+Route::resource('/cart','ShoppingController');
+
+Route::get('/cart/destroy/{id}','ShoppingController@destroy')->name('cart.destroy');
+
+Route::get('/cart/increment/{id}/{qty}','ShoppingController@increment')->name('cart.increment');
+Route::get('/cart/decrement/{id}/{qty}','ShoppingController@decrement')->name('cart.decrement');
+
+Route::get('/cart/rapid/add/{id}','ShoppingController@rapidAdd')->name('rapid.add');
