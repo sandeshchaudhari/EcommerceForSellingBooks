@@ -38,3 +38,6 @@ Route::get('/cart/increment/{id}/{qty}','ShoppingController@increment')->name('c
 Route::get('/cart/decrement/{id}/{qty}','ShoppingController@decrement')->name('cart.decrement');
 
 Route::get('/cart/rapid/add/{id}','ShoppingController@rapidAdd')->name('rapid.add');
+
+//Route::resource('/cart/checkout','CheckoutController');
+Route::resource('/checkout','CheckoutController');
